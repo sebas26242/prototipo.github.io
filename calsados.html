@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="nav_stylo.css">
+    <title>Calzado</title>
+</head>
+<body>
+
+    <header>
+        <div class="menu">
+            <img src="img/logo.png" alt="">
+          <nav>
+              <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="caballero.html">Caballeros</a></li>
+                <li><a href="dama.html">Damas</a></li>
+                <li><a href="nino.html">Niños</a></li>
+                <li><a href="#">Zapatos</a></li>
+              </ul>
+          </nav>
+        </div>
+      </header>
+
+    <center>
+    <h1><p>Zapatos</p></h1>
+    </center>  
+
+
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/calzado/Jordan.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Jordan Retro 4</p>
+                    <span class="precio">C$ 1,500</span>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/calzado/Airf.jpeg" alt="">
+                    </div>
+                    <p class="descripcion" id>Air Force 1</p>
+                    <span class="precio">C$ 750</span>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/calzado/Addidas.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Addidas</p>
+                    <span class="precio">C$ 1,350</span>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/calzado/chi.jpeg" alt="">
+                    </div>
+
+                    <p class="descripcion">Chinelas de baño</p>
+                    <span class="precio">C$ 250</span>
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/calzado/tac_1.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Tacon mediano</p>
+                    <span class="precio">C$ 800</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/calzado/zap_na.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Zapatos para niña</p>
+                    <span class="precio">C$ 750</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/calzado/zap_no.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Zapatos para niño</p>
+                    <span class="precio">C$ 800</span>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/calzado/Sandalia.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">Sandalia</p>
+                    <span class="precio">C$ 650</span>
+                </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">MODEL 1</h2>
+                <p id="descripcion">Descripción Modelo 1</p>
+
+                <span class="precio" id="precio">$ 130</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">Talla</label>
+                        <select name="" id="">
+                            <option value="">40</option>
+                            <option value="">42</option>
+                            <option value="">44</option>
+                            <option value="">46</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
